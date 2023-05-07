@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap'); 
+
+*{
+    font-family:"poppins",sans-serif; 
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(223, 209, 209);
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(49, 98, 233);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;    
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: rgb(238, 229, 229);
+    box-shadow: 0 5px 10px ;
+    border-radius: 24px;
+    padding: 50px;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-data .name{
+    font-size: 19px;
+    font-weight: 00;
+}
+.text-data .position{
+    font-size: 17px;
+    font-weight: 700;
+}
+.profile-card .media-button{
+    display: flex;
+    align-items: centre;
+    margin-top: 20px;
+}
+.media-button .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 155, 155);
+    text-decoration: none;
+    margin: 0 15px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;   
+}
+.profile-card .button{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+} 
+.button .button{
+    margin: 0 18px;
+    padding: 10px 80px;
+    height: 22px;
+    width: 100px;
+    border-radius: 10px;
+    background-color:rgb(66, 66, 192) ;
+    cursor: pointer;
+    border: 10px;
+    color: aliceblue;
+    justify-content: center;
+ 
+}
