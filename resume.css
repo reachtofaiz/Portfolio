@@ -22,7 +22,6 @@ body{
     min-height: 1000px;
     display: grid;
     box-shadow: 0 35px 55px rgb(0, 0, 0.1);
-    background-color: white;
     
 }
 .container .leftside{
@@ -47,26 +46,17 @@ img{
 }
 
 .profiletext{
+    color: aliceblue;
     display: flex;
     position: relative;
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
-    border-bottom: 1px solid (255,255,255,0.2);
+    border-bottom: 1px solid gray;
 }
 .profiletext .imgbx{
     position: relative;
     width: 200px;
     height: 200px;
-}
-.profile-text h2 {
-    color: white;
-    font-size: 1.5em;
-    text-align: center ;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-.profile-text h2 span{
-    font-size: 0.7em;
-    font-weight: 200;
+    
 }
