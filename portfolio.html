@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT2L4o8GFvPZekbHSPLPEGRTMb8h6GDf1TA&usqp=CAU" type="image/x-icon">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="image.jpg" type="image/x-icon">
 </head>
-
 <body>
     <div class="profile-card">
         <div class="image">
-            <img src="image.jpg" alt="404 Error" class="profile-img">
+            <img src="image.jpg" alt="404 Error" class="profile-img">     
         </div>
         <div class="text-data">
             <span class="name">Mohammad Faiz</span>
-            <span class="position">Fresher</span>
+            <span class="position">
+                    <span id="element"></span>
+                    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                    <script>
+                      var typed = new Typed('#element', {
+                        strings: ['<i>Full Stack Developer .'],
+                        typeSpeed: 90,
+                      });
+                    </script>
+            </span>
         </div>
-        <div class="media-button">
-            <a href="#" style="background: rgb(211, 130, 130) ;" class="link">
-                <i class='bx bxs-phone-call'></i>
+        <div class="contact-button">
+            <a href="#" class="gmail">
+                <i class='bx bxl-gmail'></i>
             </a>
-            <a href="https://www.whatsapp.com/" style="background: rgb(98, 221, 98);" class="link">
+            <a href="https://www.whatsapp.com/" class="whatsapp">
                 <i class='bx bxl-whatsapp'></i>
             </a>
-            <a href="https://www.facebook.com/mohammad.faiz.31105" style="background: rgb(73, 113, 223) ;" class="link">
+            <a href="https://www.facebook.com/mohammad.faiz.31105" class="facebook">
                 <i class='bx bxl-facebook'></i>
             </a>
-            <a href="https://www.twitter.com" style="background: rgb(70, 177, 219) ;" class="link">
+            <a href="https://www.twitter.com" class="twitter">
                 <i class='bx bxl-twitter'></i>
             </a>
-            <a href="https://www.github.com/reachtofaiz" style="background-color: rgb(17, 16, 16);" class="link">
+            <a href="https://www.github.com/reachtofaiz"  class="github">
                 <i class='bx bxl-github'></i>
             </a>
         </div>
-        <div class="button">
-            <a href="resume.html" class="button">Resume</a>
-            <a href="" class="button"> About</a>
+        <div class="button"> 
+                <a href="resume.html" class="resume">Resume</a>
+                <a href="" class="about"> About</a>
         </div>
 </body>
-
-</html>
+</html> 

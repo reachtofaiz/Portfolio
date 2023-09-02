@@ -1,67 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 
-*{
-    font-family:"poppins",sans-serif; 
+* {
+    font-family: "poppins", sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  rgb(223, 209, 209);
+    /* background: linear-gradient(140deg, rgb(211, 151, 151), rgb(254, 255, 255)) */
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm422-073.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ef48caa87980815f77343e682d6324ee);
+    background-size: cover;
 }
-.image{
+
+.image {
     position: relative;
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: rgb(49, 98, 233);
+    background-color: rgb(23, 24, 27);
     padding: 3px;
     margin-bottom: 10px;
 }
-.image .profile-img{
+
+.image .profile-img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 2px solid white;    
+    border: 2px solid white;
 }
-.profile-card{
+
+.profile-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 370px;
     width: 100%;
-    background-color: rgb(238, 229, 229);
-    box-shadow: 0 5px 10px ;
+    border: 1px solid rgb(14, 17, 16);
+    box-shadow: 0 19px 20px;
     border-radius: 24px;
     padding: 50px;
 }
-.profile-card .text-data{
+
+.profile-card .text-data {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.text-data .name{
-    font-size: 19px;
-    font-weight: 00;
+
+.text-data .name {
+    font-size: 25px;
+    font-weight: 15px;
+    color: rgb(0, 0, 0);
 }
-.text-data .position{
+
+.text-data .position {
     font-size: 17px;
     font-weight: 700;
 }
-.profile-card .media-button{
+
+.profile-card .contact-button {
     display: flex;
     align-items: centre;
     margin-top: 20px;
 }
-.media-button .link{
+
+.contact-button .gmail {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(230, 155, 155);
+    background-color: rgb(224, 48, 48);
     text-decoration: none;
     margin: 0 15px;
     height: 34px;
@@ -69,24 +81,124 @@ body{
     border-radius: 50%;
     color: white;
     font-size: 20px;
-    text-decoration: none;   
+    text-decoration: none;
 }
-.profile-card .button{
+
+.contact-button .gmail:hover {
+    transition: 0.5s;
+    color: rgb(224, 48, 48);
+    background-color: white;
+}
+
+.contact-button .whatsapp {
     display: flex;
-    margin-top: 30px;
+    justify-content: center;
     align-items: center;
+    background-color: rgb(116, 205, 100);
+    text-decoration: none;
+    margin: 0 15px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-button .whatsapp:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.contact-button .facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 174, 238);
+    text-decoration: none;
+    margin: 0 15px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: rgb(252, 253, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-button .twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: rgb(23, 129, 186);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-button .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: rgb(255, 249, 249);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.profile-card .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
     text-align: center;
-} 
-.button .button{
+}
+
+.button .resume {
     margin: 0 18px;
+    margin-right: 60px;
     padding: 10px 80px;
     height: 22px;
     width: 100px;
     border-radius: 10px;
-    background-color:rgb(66, 66, 192) ;
+    background-color: transparent;
     cursor: pointer;
-    border: 10px;
-    color: aliceblue;
+    border: none;
+    color: rgb(227, 136, 136);
     justify-content: center;
- 
+    transition: 0.8s;
+}
+
+.button .resume:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+}
+
+.button .about {
+    margin: 0 18px;
+    margin-right: 103px;
+    padding: 10px 80px;
+    height: 22px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: rgb(227, 136, 136);
+    justify-content: center;
+    transition: 0.8s;
+}
+
+.button .about:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
 }
